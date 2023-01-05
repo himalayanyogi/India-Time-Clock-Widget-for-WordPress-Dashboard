@@ -8,6 +8,21 @@ Version: 1.0
 Author: Shivendra Kumar
 */
 
+// Pin plugin to the left menu bar in wordpress admin panel
+function custom_plugin_menu() {
+  add_menu_page(
+    'India Time Clockco', // Page Title
+    'Custom Plugin', // Menu Title
+    'manage_options', // Capability
+    'custom-plugin', // Menu Slug
+    'custom_plugin_settings_page', // Function
+    'dashicons-admin-generic', // Icon URL
+    99 // Position
+  );
+}
+add_action( 'admin_menu', 'custom_plugin_menu' );
+
+
 function india_time_display() {
   date_default_timezone_set('Asia/Kolkata');
   $current_time = date('h:i A');
@@ -30,5 +45,9 @@ function india_time_css() {
   </style>';
 }
 add_action('admin_head', 'india_time_css');
+
+
+
+
 
 ?>
