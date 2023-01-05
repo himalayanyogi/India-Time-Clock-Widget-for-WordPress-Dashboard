@@ -11,13 +11,13 @@ Author: Shivendra Kumar
 // Pin plugin to the left menu bar in wordpress admin panel
 function custom_plugin_menu() {
   add_menu_page(
-    'India Time Clockco', // Page Title
-    'Custom Plugin', // Menu Title
+    'India Time Clock', // Page Title
+    'India Time Clock', // Menu Title
     'manage_options', // Capability
     'custom-plugin', // Menu Slug
     'custom_plugin_settings_page', // Function
     'dashicons-admin-generic', // Icon URL
-    99 // Position
+    10 // Position
   );
 }
 add_action( 'admin_menu', 'custom_plugin_menu' );
