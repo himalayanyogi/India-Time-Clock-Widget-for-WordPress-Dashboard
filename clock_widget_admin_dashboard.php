@@ -16,7 +16,7 @@ function custom_plugin_menu() {
     'manage_options', // Capability
     'custom-plugin', // Menu Slug
     'custom_plugin_settings_page', // Function
-    'dashicons-clockcon', // Icon URL
+    'dashicons-clock', // Icon URL
     10 // Position
   );
 }
