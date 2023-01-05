@@ -51,4 +51,3 @@ add_action('admin_head', 'india_time_css');
 
 
 ?>
-<p>this is a test for github</p>
